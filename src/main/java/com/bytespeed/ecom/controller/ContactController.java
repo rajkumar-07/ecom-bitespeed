@@ -23,8 +23,4 @@ public class ContactController {
 		return contactService.getOrAddContactDetail(requestBody);
 	}
 	
-	@GetMapping("/find")
-	public ResponseEntity<Object> findDetails(@RequestBody ContactReqDto request){
-		return contactService.testDB(request);
-	}
 }
